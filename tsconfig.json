@@ -1,0 +1,9 @@
+{
+  "files": [],
+  "references": [
+    { "path": "contracts" },
+    { "path": "frontend" },
+    { "path": "sdk" }
+  ],
+  "exclude": ["node_modules"]
+}

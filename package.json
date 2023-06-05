@@ -1,0 +1,41 @@
+{
+    "name": "obsidian",
+    "version": "1.0.0",
+    "description": "Send and receive stealth payments on OKTC",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "contracts",
+            "frontend",
+            "sdk"
+        ],
+        "nohoist": [
+            "**/mocha",
+            "**/jest"
+        ]
+    },
+    "devDependencies": {
+        "lerna": "^3.22.1",
+        "lint-staged": "^10.5.1",
+        "prettier": "^2.4.8",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.0.3"
+    },
+    "resolutions": {
+        "y18n": "^4.0.1"
+    },
+    "scripts": {
+        "build": "lerna run build",
+        "build-frontend": "yarn lerna run --ignore \"@obsidian/contracts\" build",
+        "clean": "lerna run clean",
+        "prettier": "lerna run prettier",
+        "prepare": "lerna run prepare",
+        "coverage": "lerna run coverage",
+        "test": "lerna run test",
+        "dev": "cd sdk && yarn build && cd ../frontend && yarn dev"
+    },
+    "volta": {
+        "node": "16.15.0",
+        "yarn": "1.22.18"
+    }
+}
