@@ -1,0 +1,44 @@
+{
+    "name": "@obsidian/sdk",
+    "version": "1.0.0",
+    "main": "build/src/index.js",
+    "types": "build/src/index.d.ts",
+    "files": [
+        "build",
+        "src"
+    ],
+    "scripts": {
+        "test": "yarn build && yarn hardhat test",
+        "prettier": "prettier --write .",
+        "watch": "tsc --watch",
+        "build": "cd ../contracts && yarn build && cd ../sdk && tsc --build",
+        "clean": "rimraf build coverage .nyc_output cache",
+        "prepare": "yarn build"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@noble/secp256k1": "^1.7.1",
+        "@unstoppabledomains/resolution": "8.3.1",
+        "ethers": "5.6.9"
+    },
+    "devDependencies": {
+        "@nomiclabs/hardhat-ethers": "^2.0.2",
+        "@nomiclabs/hardhat-waffle": "^2.0.0",
+        "@types/bn.js": "^5.1.0",
+        "@types/chai": "^4.2.16",
+        "@types/mocha": "^8.2.2",
+        "chai": "^4.3.4",
+        "dotenv": "^8.2.0",
+        "eslint-config-prettier": "^8.2.0",
+        "eslint-plugin-chai-friendly": "^0.6.0",
+        "eslint-plugin-import": "^2.20.2",
+        "hardhat": "^2.12.4",
+        "mocha": "^8.3.2",
+        "nyc": "^15.1.0",
+        "ts-node": "^9.0.0",
+        "typedoc": "^0.20.35"
+    },
+    "volta": {
+        "extends": "../package.json"
+    }
+}

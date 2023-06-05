@@ -1,0 +1,21 @@
+{
+    "extends": "../tsconfig.settings.json",
+    "compilerOptions": {
+        "composite": true,
+        "declarationMap": true,
+        "outDir": "build",
+        "resolveJsonModule": true,
+        "forceConsistentCasingInFileNames": true,
+        "lib": ["es2015", "dom"],
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "baseUrl": "./",
+        "paths": {
+            "@sinonjs/fake-timers": ["../node_modules/@types/sinonjs__fake-timers"]
+        }
+    },
+    "include": ["./src/**/*", "./src/**/*.json", "./types/**/*"]
+}

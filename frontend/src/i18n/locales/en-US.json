@@ -1,0 +1,327 @@
+{
+    "Home": {
+        "header": "Send Stealth Payments",
+        "description": "Private & Anonymous transfers on OKTC",
+        "Tutorial": {
+            "tutorial": "Tutorial",
+            "receiving-funds": "Receiving Funds",
+            "receive-first": "Use the <span class=\"text-bold\">Setup</span> page to configure your account",
+            "receive-second": "Ask someone to send funds to your address, ENS, or CNS name through the Obsidian app",
+            "receive-third": "Check the <span class=\"text-bold\">Receive</span> page to withdraw funds",
+            "sending-funds": "Sending Funds",
+            "send-first": "Get the address, ENS, or CNS name of the person you're sending funds to",
+            "send-second": "Complete the form on the <span class=\"text-bold\">Send</span> page"
+        },
+        "banner-donate": "Obsidian is part of Gitcoin's Alpha matching round. Please consider {supporting} development. {LearnMore}",
+        "banner-passport": "If you gave to Obsidian during the Gitcoin round, you must {configurePassport} to qualify for matching. {LearnMore}",
+        "supporting": "supporting",
+        "configure-passport": "configure passport",
+        "learn-more": "Learn More."
+    },
+    "Home-action-card": {
+        "send": "Send",
+        "send-description": "Send funds to another user",
+        "receive": "Receive",
+        "receive-description": "View and withdraw received funds",
+        "setup": "Setup",
+        "setup-description": "Setup your account to receive funds"
+    },
+    "Header-Links": {
+        "home": "Home"
+    },
+    "Base-Layout": {
+        "connect-wallet": "Connect Wallet",
+        "settings": "Settings",
+        "dark-mode": "Dark mode",
+        "advanced-mode": "Advanced mode",
+        "advanced-mode-description": "Enables advanced features such as private key export, additional recipient ID options, and event scanning settings.",
+        "caution": "Use with caution!",
+        "on": "on",
+        "off": "off",
+        "about": "About",
+        "built-by": "Built by {0}",
+        "links": "Links"
+    },
+    "Send": {
+        "sending-disabled": "Sending via Obsidian has been temporarily disabled while we perform system maintenance. Please check back soon!",
+        "send": "Send",
+        "connect-your-wallet": "Connect your wallet to send funds",
+        "connect-wallet": "Connect Wallet",
+        "recipient": "Recipient's ENS name or address",
+        "recipient-pkey": "Send using recipient's standard public key",
+        "question-circle": "When checked, the public key used will be the standard public for the provided Ethereum address. The receiver will have to enter their account's private key into this app to withdrawal the funds.",
+        "question-circle-warning": "Don't use this feature unless you know what you're doing.",
+        "learn-more": "Learn more",
+        "select-token": "Select token to send",
+        "slippage-exceeded": "Actual send amount would materially differ from the estimate due to changing gas prices. Please try again.",
+        "token": "Token",
+        "amount": "Amount to send",
+        "summary": "Summary",
+        "sending": "Sending",
+        "fee": "Obsidian Fee",
+        "fee-explain": "Transactions on %{chainName} are very cheap, so a small fee is charged to deter spamming the protocol.",
+        "total": "Total",
+        "max": "Max",
+        "max-native-less-than-toll": "Cannot send max. Balance less than toll.",
+        "copy-payment-link": "Copy payment link",
+        "enter-an-amount": "Please enter an amount",
+        "enter-a-recipient": "Please enter a recipient",
+        "select-a-token": "Please select a token",
+        "send-at-least": "Please send at least",
+        "amount-exceeds-balance": "Amount exceeds wallet balance",
+        "please-complete-form": "Please complete the form",
+        "wallet-not-connected": "Wallet not connected",
+        "obsidian-fee-exceeds-balance": "required for Obsidian fee exceeds wallet balance",
+        "advanced-send-warning": "The receiver will have to enter their account's private key into this app to withdraw the funds. Don't use this feature unless you know what you're doing.",
+        "acknowledge-risks": "I acknowledge the risks",
+        "send-history": "Send history"
+    },
+    "Receive": {
+        "receive": "Receive",
+        "connect-your-wallet": "Connect your wallet to scan for received funds",
+        "connect-wallet": "Connect Wallet",
+        "need-signature": "Obsidian needs your signature to scan for funds you may have received",
+        "scan-funds": "Click below to scan for funds you may have received",
+        "sign": "Sign",
+        "scan": "Scan",
+        "scan-settings": "Scan Settings",
+        "start-end": "Enter the start or end blocks to use when scanning for events. A blank start block will scan from block zero, and a blank end block will scan through the current block.",
+        "start-block": "Start block",
+        "end-block": "End block",
+        "enter-prv-key": "Enter the private key to use when scanning for events. A blank private key will use the ones generated from your signature.",
+        "prv-key": "Private key",
+        "fetching": "Fetching announcements...",
+        "scanning": "Scanning for funds...",
+        "wait": "This may take a couple of minutes depending on your connection and device. This is normal&mdash; please be patient."
+    },
+    "Setup": {
+        "setup": "Setup",
+        "connect-wallet": "Connect your wallet to setup your account",
+        "generate-stealth": "Generate and Publish Stealth Keys",
+        "paragraph": " Use the button below to complete the setup process. This will result in two prompts from your wallet: <ol> <li> <span class=\"text-bold\">Sign a message</span> used to generate your Obsidian-specific pair of private keys. These keys allow you to securely use Obsidian without compromising the private keys of your connected wallet. You do not need to save these keys anywhere! </li> <li> <span class=\"text-bold\">Submit a transaction</span> to save the corresponding public keys on-chain, so anyone can use them to send you stealth payments. </li> </ol>",
+        "setup-account": "Setup account",
+        "complete": "Setup Complete!",
+        "return-to-home": "You may now return {0} to send or receive funds",
+        "return-home": "home"
+    },
+    "Error": {
+        "error": "Oops. Nothing here..."
+    },
+    "AccountReceiveTable": {
+        "processing-results": "Processing results...",
+        "configure-obsidian": "You won't be able to receive funds until you've configured Obsidian.",
+        "navigate-to-setup": "Please navigate to the {0} page and do so",
+        "setup": "Setup",
+        "keys-dont-match": "The stealth keys published for this account do not match those generated by it. Please navigate to the {0} page and complete the setup flow to ensure the keys published match this account. Failure to do so may result in payments sent to your account being difficult, or even impossible, to withdraw. ",
+        "learn-more": "Learn more",
+        "scan-settings": "Change scan settings",
+        "account-empty": "This account has not received any funds",
+        "received-funds": "Received Funds",
+        "sender": "Sender",
+        "stealth-receiver": "Stealth Receiver",
+        "received": "Received",
+        "withdrawn": "Withdrawn",
+        "hide": "Hide",
+        "withdraw": "Withdraw",
+        "receiver": "Receiver",
+        "scanning-complete": "Scanning completed successfully",
+        "custom-prv-key": " with custom private key",
+        "scanned-from-block": "Scanned from block",
+        "to": "to",
+        "all-blocks-scanned": "All blocks have been scanned",
+        "scanned-all-blocks-up-to": "Scanned all blocks up to",
+        "to-current-block": "to current block",
+        "private-key-copied": "Private key copied to clipboard",
+        "date-received": "Date Received",
+        "amount": "Amount",
+        "wallet-not-connected": "Wallet not connected. Try refreshing the page and connect your wallet",
+        "address-copied": "address copied to clipboard",
+        "obsidian-instance-not-found": "Obsidian instance not found",
+        "provider-not-found": "Provider not found",
+        "no-announcement-selected": "No announcement is selected for withdraw",
+        "signer-or-provider-not-found": "Signer or provider not found",
+        "fee-not-set": "Fee is not set",
+        "invalid-chain-id": "Invalid chainID",
+        "receiver-tool-tip": "The stealth address which received these funds. It looks like an empty address, and it can't be tied to your account, but only you have the ability to generate its private key.",
+        "loss-warning": "It looks like you're trying to withdraw your funds to a token contract. It is very likely this is not what you intend, and proceeding will likely result in a loss of funds. Do not proceed unless you know exactly what you are doing.",
+        "i-know-what": "I know what I am doing",
+        "danger": "Danger"
+    },
+    "AccountReceiveTableWarning": {
+        "withdrawal-warning": "You are withdrawing to {0}, which has the following warnings:",
+        "withdrawal-warning-rest": "<span class=\"text-bold\">Continuing with withdrawal is not recommended</span> unless you know what you are doing, as this may reduce or entirely remove the privacy properties provided by Obsidian.",
+        "learn-more": "Learn More",
+        "acknowledge-risks": "I acknowledge the risks"
+    },
+    "AccountReceiveTableWithdrawConfirmation": {
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "confirm-withdrawal": "Confirm Withdrawal",
+        "to": "Withdrawing to",
+        "amount": "Amount",
+        "tx-fee": "Transaction Fee",
+        "you-will-receive": "You'll receive",
+        "cannot-withdraw": "Cannot withdraw, please correct fee error",
+        "withdraw-in-progress": "Withdraw in progress...",
+        "view-transaction": "View transaction"
+    },
+    "AccountSendTable": {
+        "account-empty": "No funds sent in this browser",
+        "address": "Recipient address",
+        "amount": "Amount",
+        "date-sent": "Date sent",
+        "receiver": "Receiver",
+        "sent-funds": "Sent funds",
+        "storage-description": "The send history is local to your current browser and will differ when accessed from a different browser or a different device. We do this to maximize your security and privacy."
+    },
+    "AccountSent": {
+        "connect-wallet": "Connect Wallet",
+        "connect-your-wallet": "Connect your wallet to send funds"
+    },
+    "ConnectWalletCard": {
+        "connect-wallet": "Connect Wallet"
+    },
+    "WalletRow": {
+        "account": "Account",
+        "disconnect": "Disconnect",
+        "address-copied": "Address copied to clipboard",
+        "connected-with": "Connected with",
+        "copy-address": "Copy address",
+        "view-send-history": "View send history",
+        "view-on-explorer": "View on explorer"
+    },
+    "WithdrawForm": {
+        "withdraw-address": "Enter address to withdraw funds to",
+        "address": "Address",
+        "fetching-fee-estimate": "Fetching fee estimate...",
+        "withdrawal-fee": "Withdrawal fee:",
+        "estimated-withdrawal-fee": "Estimated withdrawal fee:",
+        "withdraw-in-progress": "Withdraw in progress...",
+        "warning": " <span class=\"text-bold\">WARNING</span>: Be sure you understand the security implications before entering a withdrawal address. If you withdraw to an address publicly associated with you, privacy for this transaction will be lost.",
+        "learn-more": "Learn more",
+        "hide": "Hide",
+        "show": "Show",
+        "stealth-prv-key": "stealth address private key",
+        "withdraw": "Withdraw",
+        "enter-valid-address": "Please enter valid address"
+    },
+    "Utils": {
+        "Alerts": {
+            "transaction-pending": "Your transaction is pending",
+            "transaction-succeeded": "Your transaction has succeeded",
+            "transaction-failed": "Your transaction has failed"
+        },
+        "Dialog": {
+            "warning": "Warning"
+        }
+    },
+    "connect": {
+        "selectingWallet": {
+            "header": "Available Wallets",
+            "sidebar": {
+                "heading": "Get Started",
+                "subheading": "Connect your wallet",
+                "paragraph": "Connecting your wallet is like “logging in” to Web3. Select your wallet from the options to get started."
+            },
+            "recommendedWalletsPart1": "{app} only supports",
+            "recommendedWalletsPart2": "on this platform. Please use or install one of the supported wallets to continue",
+            "installWallet": "You do not have any wallets installed that {app} supports, please use a supported wallet",
+            "agreement": {
+                "agree": "I agree to the",
+                "terms": "Terms & Conditions",
+                "and": "and",
+                "privacy": "Privacy Policy"
+            }
+        },
+        "connectingWallet": {
+            "header": "{connectionRejected, select, false {Connecting to {wallet}...} other {Connection Rejected}}",
+            "sidebar": {
+                "subheading": "Approve Connection",
+                "paragraph": "Please approve the connection in your wallet and authorize access to continue."
+            },
+            "mainText": "Connecting...",
+            "paragraph": "Make sure to select all accounts that you want to grant access to.",
+            "previousConnection": "{wallet} already has a pending connection request, please open the {wallet} app to login and connect.",
+            "rejectedText": "Connection Rejected!",
+            "rejectedCTA": "Click here to try again",
+            "primaryButton": "Back to wallets"
+        },
+        "connectedWallet": {
+            "header": "Connection Successful",
+            "sidebar": {
+                "subheading": "Connection Successful!",
+                "paragraph": "Your wallet is now connected to {app}"
+            },
+            "mainText": "Connected"
+        }
+    },
+    "modals": {
+        "actionRequired": {
+            "heading": "Action required in {wallet}",
+            "paragraph": "Please switch the active account in your wallet.",
+            "linkText": "Learn more.",
+            "buttonText": "Okay"
+        },
+        "switchChain": {
+            "heading": "Switch Chain",
+            "paragraph1": "{app} requires that you switch your wallet to the {nextNetworkName} network to continue.",
+            "paragraph2": "*Some wallets may not support changing networks. If you can not change networks in your wallet you may consider switching to a different wallet."
+        },
+        "confirmDisconnectAll": {
+            "heading": "Disconnect all Wallets",
+            "description": "Are you sure that you would like to disconnect all your wallets?",
+            "confirm": "Confirm",
+            "cancel": "Cancel"
+        }
+    },
+    "accountCenter": {
+        "connectAnotherWallet": "Connect another Wallet",
+        "disconnectAllWallets": "Disconnect all Wallets",
+        "currentNetwork": "Current Network",
+        "appInfo": "App Info",
+        "learnMore": "Learn More",
+        "gettingStartedGuide": "Getting Started Guide",
+        "smartContracts": "Smart Contract(s)",
+        "explore": "Explore",
+        "backToApp": "Back to dapp",
+        "poweredBy": "powered by",
+        "addAccount": "Add Account",
+        "setPrimaryAccount": "Set Primary Account",
+        "disconnectWallet": "Disconnect Wallet",
+        "copyAddress": "Copy Wallet address"
+    },
+    "notify": {
+        "transaction": {
+            "txRequest": "Your transaction is waiting for you to confirm",
+            "nsfFail": "You have insufficient funds for this transaction",
+            "txUnderpriced": "The gas price for your transaction is too low, try a higher gas price",
+            "txRepeat": "This could be a repeat transaction",
+            "txAwaitingApproval": "You have a previous transaction waiting for you to confirm",
+            "txConfirmReminder": "Please confirm your transaction to continue",
+            "txSendFail": "You rejected the transaction",
+            "txSent": "Your transaction has been sent to the network",
+            "txStallPending": "Your transaction has stalled before it was sent, please try again",
+            "txStuck": "Your transaction is stuck due to a nonce gap",
+            "txPool": "Your transaction has started",
+            "txStallConfirmed": "Your transaction has stalled and hasn't been confirmed",
+            "txSpeedUp": "Your transaction has been sped up",
+            "txCancel": "Your transaction is being canceled",
+            "txFailed": "Your transaction has failed",
+            "txConfirmed": "Your transaction has succeeded",
+            "txError": "Oops something went wrong, please try again",
+            "txReplaceError": "There was an error replacing your transaction, please try again"
+        },
+        "watched": {
+            "txPool": "Your account is {verb} {formattedValue} {asset} {preposition} {counterpartyShortened}",
+            "txSpeedUp": "Transaction for {formattedValue} {asset} {preposition} {counterpartyShortened} has been sped up",
+            "txCancel": "Transaction for {formattedValue} {asset} {preposition} {counterpartyShortened} has been canceled",
+            "txConfirmed": "Your account successfully {verb} {formattedValue} {asset} {preposition} {counterpartyShortened}",
+            "txFailed": "Your account failed to {verb} {formattedValue} {asset} {preposition} {counterpartyShortened}",
+            "txStuck": "Your transaction is stuck due to a nonce gap"
+        },
+        "time": {
+            "minutes": "min",
+            "seconds": "sec"
+        }
+    }
+}
